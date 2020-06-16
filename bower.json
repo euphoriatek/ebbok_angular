@@ -1,0 +1,22 @@
+{
+  "name": "ebook",
+  "description": "",
+  "main": "",
+  "authors": [
+    "brijendra <brijendra@me.com>"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.7",
+    "bootstrap": "~3.3.5"
+  },
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
