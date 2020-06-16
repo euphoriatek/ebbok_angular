@@ -1,2 +1,14 @@
 <app-header></app-header>
-<p>home works!</p>
+<div id="chartContainer" style="height: 500px; width: 100%;">
+	<div class="chart-wrapper">
+		<canvas baseChart height="400" 
+		[datasets]="barChartData"
+		[labels]="barChartLabels"
+		[colors]="chartColors"
+		[options]="barChartOptions"
+		[plugins]="barChartPlugins"
+		[legend]="barChartLegend"
+		[chartType]="barChartType">
+	</canvas>
+</div>
+</div>
