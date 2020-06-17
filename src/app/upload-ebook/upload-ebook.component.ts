@@ -38,7 +38,6 @@ export class UploadEbookComponent implements OnInit {
 	}
 
 	submit(){
-		debugger;
 		console.log(this.form.value);
 		this.router.navigate(['image-editor']);
 	}
