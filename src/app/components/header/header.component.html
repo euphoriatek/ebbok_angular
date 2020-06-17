@@ -19,6 +19,17 @@
 				</div>
 				<button class="btn btn-outline-primary menu-option" id="dropdownBasic3" routerLink="/upload-ebook">Upload Polices</button>
 			</div>
+			<div ngbDropdown class="d-inline-block" (openChange)="toggled($event)">
+				<button class="btn btn-outline-primary menu-option" id="dropdownBasic1" ngbDropdownToggle>{{selectedSortOrder}}</button>
+				<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+					<button class="dropdown-item" *ngFor="let sortOrder of sortOrders" (click)="ChangeSortOrder(sortOrder)" >{{sortOrder}}</button>
+				</div>
+				<button class="btn btn-outline-primary menu-option" id="dropdownBasic2" ngbDropdownToggle>{{selectedSortOrder2}}</button>
+				<div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+					<button class="dropdown-item" *ngFor="let sortOrder of sortOrders" (click)="ChangeSortOrder2(sortOrder)" >{{sortOrder}}</button>
+				</div>
+				<button class="btn btn-outline-primary menu-option" id="dropdownBasic3" routerLink="/upload-ebook">Upload Polices</button>
+			</div>
 		</div>
 	</div>
 </div>
