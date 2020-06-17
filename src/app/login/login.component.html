@@ -1,34 +1,31 @@
-<section class="secLogin">
+<section class="section-Login">
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-7">
-
-			</div>
-			<div class="col-lg-5">
-				
-			</div>
-		</div>
-	</div>
-</section>
-<div class="login-container">
-	<div class="container">    
-		<div class="col-md-5 col-md-offset-3">                    
-			<div class="panel panel-primary" >
-				<div class="panel-heading">
-					<div class="panel-title">Account Login</div>
-				</div>     
-				<div class="panel-body login-form">
-					<input type="text" class="form-control" placeholder="username or email" />
-					<input type="text" class="form-control" placeholder="password" />
-					<div class="form-group">
-						<input type="checkbox"> Remember me
-					</div>        
-					<div class="form-group">
-						<input (click)="goToHome()" routerLink="/home" type="button" class="btn btn-lg btn-success btn-block" value="Sign in">
+		<div class="login-wraper">
+			<div class="row">
+				<div class="col-lg-7">
+					<div class="login-right-side">
+						<h1>The unseen hand that shapes the army's punch surely & silently</h1>
+						<p>Army Ordnance Corps</p>
+					</div>
+				</div>
+				<div class="col-lg-5">
+					<div class="login-right-side">
+						<form>
+							<h2>ATO's e-Book</h2>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Username or Email" />
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Password"/>
+							</div>
+							<div class="form-group">
+								<input (click)="goToHome()" routerLink="/home" type="button" class="btn btn-theme" value="Sign in">
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
