@@ -1,6 +1,5 @@
 .section-Login {
   background: var(--dark-theme);
-  min-height: 100vh;
 }
 
 .section-Login .login-wraper {
@@ -9,18 +8,17 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  min-height: 100vh;
 }
 
 .section-Login .login-wraper .login-left-side {
-  -ms-flex: 0 0 50%;
+  -ms-flex: 0 0 60%;
   -webkit-box-flex: 0;
-          flex: 0 0 50%;
-  max-width: 50%;
-  background: url(../../assets/images/login-banner.png) no-repeat;
-  background-size: cover;
-  background-position: top center;
+          flex: 0 0 60%;
+  max-width: 60%;
   position: relative;
+  height: 100vh;
+  background-image: url(../../assets/images/login-banner.png);
+  background-repeat: no-repeat;
 }
 
 .section-Login .login-wraper .login-left-side h1 {
@@ -28,7 +26,7 @@
   color: var(--white);
   font-weight: 900;
   text-align: center;
-  padding: 150px 60px 0;
+  padding: 200px 150px 0;
   letter-spacing: 2px;
 }
 
@@ -44,10 +42,10 @@
 
 .section-Login .login-wraper .login-right-side {
   background: var(--white);
-  -ms-flex: 0 0 50%;
+  -ms-flex: 0 0 40%;
   -webkit-box-flex: 0;
-          flex: 0 0 50%;
-  max-width: 50%;
+          flex: 0 0 40%;
+  max-width: 40%;
   padding: 50px;
 }
 
