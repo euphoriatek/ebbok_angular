@@ -38,6 +38,10 @@ blockquote {
   } 
 }
 
+a{
+    text-decoration: none;
+    &:hover{text-decoration: none;}
+}
 table {
     border-collapse: collapse;
     border-spacing: 0; 
@@ -76,5 +80,18 @@ input.form-control {
     &:hover, &:focus{
         outline: 0;
         box-shadow: 0 0 0 0.2rem rgba(17, 177, 79, 0.25);
+    }
+}
+.dropdown-item.active, .dropdown-item:active, .dropdown-item:hover{
+    background-color: var(--base-color);
+    color: var(--white);
+}
+.dropdown-menu{
+    border: none;
+    margin: 7px 0 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 0px;
+    .dropdown-item {
+        padding: 10px 20px;
     }
 }

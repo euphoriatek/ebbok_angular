@@ -1,23 +1,42 @@
-.header-container {
-  margin-right: 12%;
-  margin-left: 12%;
+.navbar-expand-lg > .container-fluid {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.menu-container {
-  background-color: #098F6E;
-  width: 80%;
-  color: #fff;
-  padding-right: 24px;
-  padding-left: 24px;
+.navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.menu-option {
-  color: #fff;
-  border: none;
+.navbar-brand .brand-logo {
+  max-width: 50px;
+  margin-right: 10px;
 }
 
-.menu-option:hover {
-  background-color: transparent;
-  color: #fff;
+.navbar-brand .brand-text {
+  font-weight: 900;
+}
+
+.navbar-brand .navbar-right .profile-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.navbar-brand .navbar-right .profile-option .user-navbar-img {
+  height: 60px;
+  width: 60px;
+  background: #ddd;
+  border-radius: 50%;
+  margin-right: 15px;
 }
 /*# sourceMappingURL=header.component.css.map */
