@@ -2,6 +2,18 @@
     padding: 50px 0;
     .card{
         border: none;
+        background: var(--white);
         box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        .heading {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 20px;
+            .icon {
+                max-width: 25px;
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
     }
 }   

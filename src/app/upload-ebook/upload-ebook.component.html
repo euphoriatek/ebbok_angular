@@ -1,12 +1,43 @@
 <app-header></app-header>
-
-<h3>Upload Ebook</h3>
+<article>
+	<section class="main-body">
+		<div class="container-fluid">
+			<div class="upload-detail-wrapper">
+				<div class="card">
+					<p class="heading"><span class="icon"><img src="../../assets/images/upload.png" alt="icon upload"></span>Upload e-Book</p>
+					<div class="upload-file-wrapper">
+						<div class="row">
+							<div class="col-lg-6 d-flex justify-content-center">
+								<a class="upload" href="#">
+									<span class="icon-upload">
+										<img src="../../assets/images/book-upload.png" alt="icon upload">
+									</span>
+									<span>Click to upload images</span>
+								</a>
+							</div>
+							<div class="col-lg-6 d-flex justify-content-center">
+								<a class="upload" href="#">
+									<span class="icon-upload">
+										<img src="../../assets/images/book-upload.png" alt="icon upload">
+									</span>
+									<span>Click to upload images</span>
+								</a>
+							</div>
+						</div>
+						<p class="text-right mt-5">
+							<button class="btn btn-theme">Next</button>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</article>
 <div class="upload-container">
 	<div class="upload-img">
 		<div class="container fileUploadWrapper">
 			<form [formGroup]="form">
 				<div class="row">
-
 					<!-- <div class="col-md-12" *ngIf="progress">
 						<div class="progress form-group">
 							<div class="progress-bar progress-bar-striped bg-success" role="progressbar"
@@ -37,14 +68,10 @@
 	</form>
 </div>
 </div>
-
-
-
 <div class="upload-pdf">
 	<div class="container fileUploadWrapper">
 		<form [formGroup]="form">
 			<div class="row">
-
 				<!-- <div class="col-md-12" *ngIf="progress">
 					<div class="progress form-group">
 						<div class="progress-bar progress-bar-striped bg-success" role="progressbar"
@@ -52,7 +79,6 @@
 					</div>
 				</div>
 			</div> -->
-
 			<!-- <div class="col-md-12">
 				<div class="fileupload" appDragDropFileUpload (click)="fileField.click()"
 				(fileDropped)="upload($event)">
@@ -60,7 +86,6 @@
 				<input type="file" name="avatars" #fileField (change)="upload($event.target.files)" hidden multiple>
 			</div>
 		</div> -->
-
 		<!-- <div class="col-md-12">
 			<div class="image-list" *ngFor="let file of fileArr; let i = index">
 				<div class="profile">
@@ -75,9 +100,7 @@
 </div>
 </div>
 <div class="container">
-	
 	<form [formGroup]="form" (ngSubmit)="submit()">
-		
 		<div class="form-group">
 			<label for="website">Files:</label>
 			<div *ngFor="let web of websiteList">
@@ -87,7 +110,6 @@
 				</label>
 			</div>
 		</div>
-		
 		<button class="btn btn-primary" type="submit" [disabled]="!form.valid">Submit</button>
 	</form>
 </div>
