@@ -1,0 +1,41 @@
+.detail-card-wrapper{
+    .card {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 20px;
+        .icon {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            padding: 14px;
+            background: var(--light-bg);
+        }
+        .details {
+            margin-left: auto;
+            text-align: right;
+            h4{
+                font-size: 30px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+.graph-wrapper{
+    margin-top: 30px;
+    .card{
+        padding: 20px;
+        .heading {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 20px;
+            .icon {
+                max-width: 25px;
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+    }
+}

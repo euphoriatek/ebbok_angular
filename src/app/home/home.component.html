@@ -1,14 +1,82 @@
 <app-header></app-header>
-<div id="chartContainer" style="height: 500px; width: 100%;">
-	<div class="chart-wrapper">
-		<canvas baseChart height="400" 
-		[datasets]="barChartData"
-		[labels]="barChartLabels"
-		[colors]="chartColors"
-		[options]="barChartOptions"
-		[plugins]="barChartPlugins"
-		[legend]="barChartLegend"
-		[chartType]="barChartType">
-	</canvas>
-</div>
-</div>
+<article>
+	<section class="main-body">
+		<div class="container-fluid">
+			<div class="detail-card-wrapper">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="card">
+							<div class="icon">
+								<img src="../../assets/images/users.png" alt="icon-user">
+							</div>
+							<div class="details">
+								<p>User</p>
+								<h4>1200</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="card">
+							<div class="icon">
+								<img src="../../assets/images/subject.png" alt="icon-subject">
+							</div>
+							<div class="details">
+								<p>Subject</p>
+								<h4>12</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="card">
+							<div class="icon">
+								<img src="../../assets/images/category.png" alt="icon-category">
+							</div>
+							<div class="details">
+								<p>Category</p>
+								<h4>120</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="card">
+							<div class="icon">
+								<img src="../../assets/images/sub-category.png" alt="icon-sub-category">
+							</div>
+							<div class="details">
+								<p>Sub Category</p>
+								<h4>500</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="table-wrapper">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="card p-5">
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<div class="graph-wrapper">
+				<div class="card">
+					<p class="heading"><span class="icon"><img src="../../assets/images/statistics.png" alt="icon statistics"></span> User Design</p>
+					<div id="chartContainer">
+						<div class="chart-wrapper">
+							<canvas baseChart height="400" 
+								[datasets]="barChartData"
+								[labels]="barChartLabels"
+								[colors]="chartColors"
+								[options]="barChartOptions"
+								[plugins]="barChartPlugins"
+								[legend]="barChartLegend"
+								[chartType]="barChartType">
+							</canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</article>
+
