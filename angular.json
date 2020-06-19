@@ -131,10 +131,6 @@
           }
         }
       }
-    }
-  },
-  "defaultProject": "Ebook",
-  "cli": {
-    "analytics": "55c39af9-416f-487e-b6ba-e78229cd6fe1"
+    }},
+    "defaultProject": "Ebook"
   }
-}

@@ -12,6 +12,10 @@ import { UploadEbookComponent } from './upload-ebook/upload-ebook.component';
 import { ImageTextEditorComponent } from './image-text-editor/image-text-editor.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+import { CompendiumComponent } from './compendium/compendium.component';
+import { TreeViewComponent } from './tree-view/tree-view.component';
+import { AdminOptionComponent } from './admin-option/admin-option.component';
+import { UploadPoliciesComponent } from './upload-policies/upload-policies.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
   HeaderComponent,
   FooterComponent,
   UploadEbookComponent,
-  ImageTextEditorComponent
+  ImageTextEditorComponent,
+  CompendiumComponent,
+  TreeViewComponent,
+  AdminOptionComponent,
+  UploadPoliciesComponent
   ],
   imports: [
   CKEditorModule,
