@@ -131,6 +131,10 @@
           }
         }
       }
-    }},
-    "defaultProject": "Ebook"
+    }
+  },
+  "defaultProject": "Ebook",
+  "cli": {
+    "analytics": false
   }
+}
