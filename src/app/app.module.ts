@@ -16,9 +16,11 @@ import { CompendiumComponent } from './compendium/compendium.component';
 import { TreeViewComponent } from './tree-view/tree-view.component';
 import { AdminOptionComponent } from './admin-option/admin-option.component';
 import { UploadPoliciesComponent } from './upload-policies/upload-policies.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatListModule } from '@angular/material/list';
+import { MatTableModule } from '@angular/material/table';
 import { AddUserComponent } from './add-user/add-user.component';
 import { SearchPageComponent } from './search-page/search-page.component';
-
 @NgModule({
   declarations: [
   AppComponent,
@@ -36,13 +38,16 @@ import { SearchPageComponent } from './search-page/search-page.component';
   SearchPageComponent
   ],
   imports: [
+  MatTableModule,
+  MatListModule,
   CKEditorModule,
   ChartsModule,
   BrowserModule,
   FormsModule,
   ReactiveFormsModule,
   AppRoutingModule,
-  NgbModule
+  NgbModule,
+  NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

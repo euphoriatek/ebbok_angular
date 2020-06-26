@@ -1,12 +1,36 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
 import { Label } from 'ng2-charts';
+
+export interface PeriodicElement {
+	name: string;
+	phone_number: number;
+}
+
+const ELEMENT_DATA: PeriodicElement[] = [
+{name: 'Hydrogen', phone_number: 1.0079 },
+{name: 'Helium', phone_number: 4.0026 },
+{name: 'Lithium', phone_number: 6.941 },
+{name: 'Beryllium', phone_number: 9.0122 },
+{name: 'Boron', phone_number: 10.811 },
+];
 @Component({
 	selector: 'app-home',
 	templateUrl: './home.component.html',
 	styleUrls: ['./home.component.scss']
 })
+
 export class HomeComponent implements OnInit {
+	name: string;
+	position: number;
+	weight: number;
+	symbol: string;
+
+	typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
+	
+
+	displayedColumns: string[] = [ 'name', 'phone_number'];
+	dataSource = ELEMENT_DATA;
 
 	constructor() { }
 
@@ -40,4 +64,6 @@ export class HomeComponent implements OnInit {
 	];
 
 }
+
+
 

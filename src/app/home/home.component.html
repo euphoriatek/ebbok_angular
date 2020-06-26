@@ -50,33 +50,62 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div class="table-wrapper">
+			<div class="table-wrapper">
 				<div class="row">
 					<div class="col-sm-6">
-						<div class="card p-5">
-						</div>
+						<!-- <div class="card p-5"></div> -->
+						<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+							<ng-container matColumnDef="name">
+								<th mat-header-cell *matHeaderCellDef> Name </th>
+								<td mat-cell *matCellDef="let element"> {{element.name}} </td>
+							</ng-container>
+
+							<ng-container matColumnDef="phone_number">
+								<th mat-header-cell *matHeaderCellDef> Phone Number </th>
+								<td mat-cell *matCellDef="let element"> {{element.phone_number}} </td>
+							</ng-container>
+							<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+							<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+						</table>
+						
+					</div>
+
+					<div class="col-sm-6">
+						<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+							<ng-container matColumnDef="name">
+								<th mat-header-cell *matHeaderCellDef> Name </th>
+								<td mat-cell *matCellDef="let element"> {{element.name}} </td>
+							</ng-container>
+
+							<ng-container matColumnDef="phone_number">
+								<th mat-header-cell *matHeaderCellDef> Phone Number </th>
+								<td mat-cell *matCellDef="let element"> {{element.phone_number}} </td>
+							</ng-container>
+							<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+							<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+						</table>
 					</div>
 				</div>
-			</div> -->
+			</div>
 			<div class="graph-wrapper">
 				<div class="card">
 					<p class="heading"><span class="icon"><img src="../../assets/images/statistics.png" alt="icon statistics"></span> User Design</p>
 					<div id="chartContainer">
 						<div class="chart-wrapper">
 							<canvas baseChart height="400" 
-								[datasets]="barChartData"
-								[labels]="barChartLabels"
-								[colors]="chartColors"
-								[options]="barChartOptions"
-								[plugins]="barChartPlugins"
-								[legend]="barChartLegend"
-								[chartType]="barChartType">
-							</canvas>
-						</div>
+							[datasets]="barChartData"
+							[labels]="barChartLabels"
+							[colors]="chartColors"
+							[options]="barChartOptions"
+							[plugins]="barChartPlugins"
+							[legend]="barChartLegend"
+							[chartType]="barChartType">
+						</canvas>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
 </article>
 
