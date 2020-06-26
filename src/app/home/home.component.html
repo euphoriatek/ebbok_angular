@@ -53,37 +53,67 @@
 			<div class="table-wrapper">
 				<div class="row">
 					<div class="col-sm-6">
-						<!-- <div class="card p-5"></div> -->
-						<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-							<ng-container matColumnDef="name">
-								<th mat-header-cell *matHeaderCellDef> Name </th>
-								<td mat-cell *matCellDef="let element"> {{element.name}} </td>
-							</ng-container>
-
-							<ng-container matColumnDef="phone_number">
-								<th mat-header-cell *matHeaderCellDef> Phone Number </th>
-								<td mat-cell *matCellDef="let element"> {{element.phone_number}} </td>
-							</ng-container>
-							<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-							<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-						</table>
-						
+						<div class="card">
+							<div class="table-header">
+								<p class="heading">User List</p>
+								<div class="search-wraper">
+									<div class="table_search">
+										<input type="search" class="rounded-control">
+										<span class="searchIcon">
+											<img src="../../assets/images/search.png" alt="icon search">
+										</span>
+									</div>
+								</div>
+							</div>
+							<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+								<ng-container matColumnDef="name">
+									<th mat-header-cell *matHeaderCellDef> Name </th>
+									<td mat-cell *matCellDef="let element"> {{element.name}} </td>
+								</ng-container>
+	
+								<ng-container matColumnDef="phone_number">
+									<th mat-header-cell *matHeaderCellDef> Phone Number </th>
+									<td mat-cell *matCellDef="let element"> {{element.phone_number}} </td>
+								</ng-container>
+								<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+								<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+							</table>
+							<div class="table-footer">
+								<a href="#" class="btn btn-sm btn-dark">View all</a>
+							</div>
+						</div>						
 					</div>
 
 					<div class="col-sm-6">
-						<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-							<ng-container matColumnDef="name">
-								<th mat-header-cell *matHeaderCellDef> Name </th>
-								<td mat-cell *matCellDef="let element"> {{element.name}} </td>
-							</ng-container>
-
-							<ng-container matColumnDef="phone_number">
-								<th mat-header-cell *matHeaderCellDef> Phone Number </th>
-								<td mat-cell *matCellDef="let element"> {{element.phone_number}} </td>
-							</ng-container>
-							<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-							<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-						</table>
+						<div class="card">
+							<div class="table-header">
+								<p class="heading">Page View Count</p>
+								<div class="search-wraper">
+									<div class="table_search">
+										<input type="search" class="rounded-control">
+										<span class="searchIcon">
+											<img src="../../assets/images/search.png" alt="icon search">
+										</span>
+									</div>
+								</div>
+							</div>
+							<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+								<ng-container matColumnDef="name">
+									<th mat-header-cell *matHeaderCellDef> Name </th>
+									<td mat-cell *matCellDef="let element"> {{element.name}} </td>
+								</ng-container>
+	
+								<ng-container matColumnDef="phone_number">
+									<th mat-header-cell *matHeaderCellDef> Phone Number </th>
+									<td mat-cell *matCellDef="let element"> {{element.phone_number}} </td>
+								</ng-container>
+								<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+								<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+							</table>
+							<div class="table-footer">
+								<a href="#" class="btn btn-sm btn-dark">View all</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

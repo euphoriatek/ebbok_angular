@@ -70,10 +70,19 @@ img{
     transition: ease all 0.3s;
     background-color: var(--base-color);
     color: var(--white);
+    border: none;
     &:hover{
         background-color: var(--dark-theme);
         padding-left: 40px;
         color: var(--white);
+    }
+    &.btn.btn-sm {
+        padding: 10px;
+        height: auto;
+        line-height: normal;
+    }
+    &.btn-dark {
+        background: var(--dark-theme);
     }
 }
 input.form-control {

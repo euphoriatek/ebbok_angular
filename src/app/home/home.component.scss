@@ -22,6 +22,38 @@
         }
     }
 }
+.table-wrapper{
+    margin: 50px 0 0;
+    .card{
+        overflow: hidden;
+        table{
+            box-shadow: none;
+            th {
+                vertical-align: middle;
+                font-size: 15px!important;
+                letter-spacing: 1px;
+                color: inherit!important;
+                &:last-child{
+                    text-align: right;
+                }
+            }
+            tr{
+                td{
+                    vertical-align: middle;
+                    &:last-child{
+                        text-align: right;
+                    }
+                }
+                &:nth-child(even){
+                    background: rgba(0,0,0,.05);
+                }
+                &.mat-header-row {
+                    height: 48px;
+                }
+            }
+        }
+    }
+}
 .graph-wrapper{
     margin-top: 30px;
     .card{
