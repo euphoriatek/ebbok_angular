@@ -38,7 +38,10 @@ blockquote {
       content: none; 
   } 
 }
-
+textarea{
+    resize: none;
+    min-height: 120px;
+}
 a{
     text-decoration: none;
     &:hover{text-decoration: none;}

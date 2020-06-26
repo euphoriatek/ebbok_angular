@@ -8,7 +8,8 @@ import { UploadPoliciesComponent } from './upload-policies/upload-policies.compo
 import { AdminOptionComponent } from './admin-option/admin-option.component';
 import { TreeViewComponent } from './tree-view/tree-view.component';
 import { CompendiumComponent } from './compendium/compendium.component';
-
+import { AddUserComponent } from './add-user/add-user.component';
+import { SearchPageComponent } from './search-page/search-page.component';
 
 const routes: Routes = [
 { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -20,6 +21,8 @@ const routes: Routes = [
 { path: 'admin',  component: AdminOptionComponent,},
 { path: 'tree-view',  component: TreeViewComponent,},
 { path: 'compendium',  component: CompendiumComponent,},
+{ path: 'add-user',  component: AddUserComponent,},
+{ path: 'search-page',  component: SearchPageComponent,},
 ];
 
 @NgModule({

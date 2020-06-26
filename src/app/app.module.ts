@@ -19,6 +19,8 @@ import { UploadPoliciesComponent } from './upload-policies/upload-policies.compo
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
+import { AddUserComponent } from './add-user/add-user.component';
+import { SearchPageComponent } from './search-page/search-page.component';
 @NgModule({
   declarations: [
   AppComponent,
@@ -31,7 +33,9 @@ import { MatTableModule } from '@angular/material/table';
   CompendiumComponent,
   TreeViewComponent,
   AdminOptionComponent,
-  UploadPoliciesComponent
+  UploadPoliciesComponent,
+  AddUserComponent,
+  SearchPageComponent
   ],
   imports: [
   MatTableModule,
