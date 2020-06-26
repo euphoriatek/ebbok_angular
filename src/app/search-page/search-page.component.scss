@@ -27,8 +27,6 @@
     }
     .card {
         min-height: calc(100vh - 300px);
-        max-width: 1400px;
-        margin: 0 auto;
         &.no-table{
             background: var(--white) url(../../assets/images/center-img.png)no-repeat;
             background-position: center center;

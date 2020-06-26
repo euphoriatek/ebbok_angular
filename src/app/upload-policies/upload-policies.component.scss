@@ -1,0 +1,12 @@
+.upload-policies{
+    .card {
+        padding: 30px;
+        min-height: calc(100vh - 250px);
+        .form-wraper{
+            label{
+                margin-bottom: 10px;
+                font-weight: 600;
+            }
+        }
+    }
+}
