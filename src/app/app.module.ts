@@ -17,6 +17,7 @@ import { TreeViewComponent } from './tree-view/tree-view.component';
 import { AdminOptionComponent } from './admin-option/admin-option.component';
 import { UploadPoliciesComponent } from './upload-policies/upload-policies.component';
 import { AddUserComponent } from './add-user/add-user.component';
+import { SearchPageComponent } from './search-page/search-page.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { AddUserComponent } from './add-user/add-user.component';
   TreeViewComponent,
   AdminOptionComponent,
   UploadPoliciesComponent,
-  AddUserComponent
+  AddUserComponent,
+  SearchPageComponent
   ],
   imports: [
   CKEditorModule,
