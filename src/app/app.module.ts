@@ -16,7 +16,9 @@ import { CompendiumComponent } from './compendium/compendium.component';
 import { TreeViewComponent } from './tree-view/tree-view.component';
 import { AdminOptionComponent } from './admin-option/admin-option.component';
 import { UploadPoliciesComponent } from './upload-policies/upload-policies.component';
-
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatListModule } from '@angular/material/list';
+import { MatTableModule } from '@angular/material/table';
 @NgModule({
   declarations: [
   AppComponent,
@@ -32,13 +34,16 @@ import { UploadPoliciesComponent } from './upload-policies/upload-policies.compo
   UploadPoliciesComponent
   ],
   imports: [
+  MatTableModule,
+  MatListModule,
   CKEditorModule,
   ChartsModule,
   BrowserModule,
   FormsModule,
   ReactiveFormsModule,
   AppRoutingModule,
-  NgbModule
+  NgbModule,
+  NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
