@@ -56,9 +56,10 @@ nav.navbar {
 		padding: 0 15px;
 		.navbar-nav{
 			.nav-link{
-				padding: 15px;
+				padding: 16px;
 				color: var(--white);
 				font-weight: 300;
+				letter-spacing: 1px;
 				&.dropdown-toggle{
 					&::after{
 						display: none;

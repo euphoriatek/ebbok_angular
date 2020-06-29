@@ -21,6 +21,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
 import { AddUserComponent } from './add-user/add-user.component';
 import { SearchPageComponent } from './search-page/search-page.component';
+import { DefectInvestigationComponent } from './defect-investigation/defect-investigation.component';
 @NgModule({
   declarations: [
   AppComponent,
@@ -35,7 +36,8 @@ import { SearchPageComponent } from './search-page/search-page.component';
   AdminOptionComponent,
   UploadPoliciesComponent,
   AddUserComponent,
-  SearchPageComponent
+  SearchPageComponent,
+  DefectInvestigationComponent
   ],
   imports: [
   MatTableModule,

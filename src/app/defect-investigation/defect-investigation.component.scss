@@ -1,0 +1,12 @@
+.defect-investigation{
+    .card {
+        padding: 30px;
+        min-height: calc(100vh - 250px);
+        .form-wraper{
+            label{
+                margin-bottom: 5px;
+                font-weight: 600;
+            }
+        }
+    }
+}

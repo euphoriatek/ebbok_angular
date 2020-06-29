@@ -10,6 +10,7 @@ import { TreeViewComponent } from './tree-view/tree-view.component';
 import { CompendiumComponent } from './compendium/compendium.component';
 import { AddUserComponent } from './add-user/add-user.component';
 import { SearchPageComponent } from './search-page/search-page.component';
+import { DefectInvestigationComponent } from './defect-investigation/defect-investigation.component';
 
 const routes: Routes = [
 { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -23,6 +24,7 @@ const routes: Routes = [
 { path: 'compendium',  component: CompendiumComponent,},
 { path: 'add-user',  component: AddUserComponent,},
 { path: 'search-page',  component: SearchPageComponent,},
+{ path: 'defect-investigation',  component: DefectInvestigationComponent,},
 ];
 
 @NgModule({
